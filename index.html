@@ -3,39 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KI-Agent Demo</title>
-    <link rel="stylesheet" href="style.css">
-
-<script
-    type="module"
-    src="https://agent.d-id.com/v1/index.js"
-    data-name="did-agent"
-    data-mode="fabio"
-    data-client-key="Z29vZ2xlLW9hdXRoMnwxMDczMDg5MjE3MDg3NjIwODk1NTQ6cGI3Z1lzd3Y4T3FrcjNJb3FQM19Z"
-    data-agent-id="agt_I5dmOb_6"
-    data-monitor="true">
-</script>
-    
-    
+    <title>Versicherungs-Berater AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .avatar-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .chat-container {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Willkommen auf meiner KI-Agenten-Webseite!</h1>
-    </header>
-    <main>
-        <p>Interagiere mit dem Avatar unten:</p>
-        <script
-    type="module"
-    src="https://agent.d-id.com/v1/index.js"
-    data-name="did-agent"
-    data-mode="fabio"
-    data-client-key="Z29vZ2xlLW9hdXRoMnwxMDczMDg5MjE3MDg3NjIwODk1NTQ6cGI3Z1lzd3Y4T3FrcjNJb3FQM19Z"
-    data-agent-id="agt_I5dmOb_6"
-    data-monitor="true">
-</script>
+    <h1>Ihr Versicherungs-Berater</h1>
+    
+    <div class="avatar-container">
+        <!-- Hier kommt der D-ID Avatar // ... existing code ...
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versicherungs-Berater AI</title>
+    <script
+        type="module"
+        src="https://agent.d-id.com/v1/index.js"
+        data-name="did-agent"
+        data-mode="fabio"
+        data-client-key="Z29vZ2xlLW9hdXRoMnwxMDczMDg5MjE3MDg3NjIwODk1NTQ6cGI3Z1lzd3Y4T3FrcjNJb3FQM19Z"
+        data-agent-id="agt_I5dmOb_6"
+        data-monitor="true">
+    </script>
+    <style>
+        // ... existing code ...
+    </style>
+</head>
+<body>
+    <h1>Ihr Versicherungs-Berater</h1>
+    
+    <div class="avatar-container">
+        <!-- Der alte iframe wird durch den D-ID Agent ersetzt -->
+        <div id="did-agent"></div>
+    </div>
+    // ... existing code ...
+</body>Code hin -->https://agent.d-id.com/v1/index.js
+        <iframe
+            id="did-agent"
+            width="100%"
+            height="450"
+        ></iframe>
+    </div>
 
-    </main>
+    <div class="chat-container">
+        <input type="text" id="userQuestion" placeholder="Stellen Sie Ihre Frage..." style="width: 80%; padding: 10px;">
+        <button onclick="sendQuestion()">Fragen</button>
+    </div>
 
-    <script src="script.js"></script>
+    <script>
+        function sendQuestion() {
+            // Hier kommt später die Logik für die Kommunikation mit D-ID
+            const question = document.getElementById('userQuestion').value;
+            console.log('Frage gesendet:', question);
+        }
+    </script>
 </body>
 </html>
